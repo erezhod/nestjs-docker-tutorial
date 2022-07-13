@@ -9,4 +9,9 @@ export class AppController {
   getMovies(): Movie[] {
     return this.appService.getMovies();
   }
+
+  @Get()
+  getHello(): string {
+    return "Hello World!"
+  }
 }
