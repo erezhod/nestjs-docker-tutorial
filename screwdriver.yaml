@@ -1,0 +1,11 @@
+shared:
+  environment: 
+    NODE_ENV: development
+jobs:
+  main:
+    requires: [~pr, ~commit]
+    image: node:12.22.12-buster-slim
+    steps:
+      - init: npm install
+      - test: npm test
+
