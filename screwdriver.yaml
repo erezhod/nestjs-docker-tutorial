@@ -4,7 +4,7 @@ shared:
 jobs:
   main:
     requires: [~pr, ~commit]
-    image: node:12.22.12-buster-slim
+    image: node:12
     steps:
       - init: npm install
       - test: npm test
